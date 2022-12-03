@@ -1,7 +1,5 @@
 {
   "branches": ["main"],
-  "extends": ["@demartini/semantic-release-config"],
-  "plugins": ["semantic-release-vsce"],
   "verifyConditions": [
     "@semantic-release/changelog",
     "@semantic-release/github",
@@ -11,7 +9,8 @@
   "prepare": [
     {
       "path": "@semantic-release/changelog",
-      "changelogFile": "CHANGELOG.md"
+      "changelogFile": "CHANGELOG.md",
+      "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file. See\n[Conventional Commits](https://conventionalcommits.org) for commit guidelines."
     },
     {
       "path": "@semantic-release/git",
@@ -29,5 +28,10 @@
       "path": "@semantic-release/github",
       "assets": "*.vsix"
     }
-  ]
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator"
+  ],
+  "preset": "angular"
 }

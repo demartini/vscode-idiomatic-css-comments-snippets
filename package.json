@@ -73,10 +73,14 @@
   "scripts": {
     "package": "vsce package",
     "publish": "vsce publish --yarn",
-    "semantic-release": "semantic-release"
+    "release": "semantic-release"
   },
   "devDependencies": {
-    "@demartini/semantic-release-config": "^0.1.4",
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.7",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "@vscode/vsce": "^2.15.0",
     "semantic-release": "^19.0.5",
     "semantic-release-vsce": "^5.3.0"
