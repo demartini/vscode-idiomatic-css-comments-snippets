@@ -170,13 +170,13 @@ See [CHANGELOG][changelog-link] for a human-readable history of changes.
 
 Distributed under the MIT License. See [LICENSE][license-link] for more information.
 
-[changelog-link]: ./CHANGELOG.md
+[changelog-link]: https://github.com/demartini/vscode-idiomatic-css-comments-snippets/blob/main/CHANGELOG.md
 [contributing-link]: https://github.com/demartini/.github/blob/main/CONTRIBUTING.md
 [idiomatic-css-link]: https://github.com/necolas/idiomatic-css#3-comments
 [installs-badge]: https://img.shields.io/visual-studio-marketplace/i/demartini.vscode-idiomatic-css-comments-snippets?style=flat-square&labelColor=292a44&color=663399
 [issue-link]: https://github.com/demartini/vscode-idiomatic-css-comments-snippets/issues
 [license-badge]: https://img.shields.io/github/license/demartini/vscode-idiomatic-css-comments-snippets?style=flat-square&labelColor=292a44&color=663399
-[license-link]: ./LICENSE
+[license-link]: https://github.com/demartini/vscode-idiomatic-css-comments-snippets/blob/main/LICENSE
 [marketplace-link]: https://marketplace.visualstudio.com/items?itemName=demartini.vscode-idiomatic-css-comments-snippets
 [pull-request-link]: https://github.com/demartini/vscode-idiomatic-css-comments-snippets/pulls
 [rating-badge]: https://img.shields.io/visual-studio-marketplace/r/demartini.vscode-idiomatic-css-comments-snippets?style=flat-square&labelColor=292a44&color=663399
