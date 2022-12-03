@@ -1,37 +1,38 @@
 {
   "branches": ["main"],
-  "verifyConditions": [
-    "@semantic-release/changelog",
-    "@semantic-release/github",
-    "@semantic-release/git",
-    "semantic-release-vsce"
-  ],
-  "prepare": [
-    {
-      "path": "@semantic-release/changelog",
-      "changelogFile": "CHANGELOG.md",
-      "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file. See\n[Conventional Commits](https://conventionalcommits.org) for commit guidelines."
-    },
-    {
-      "path": "@semantic-release/git",
-      "assets": ["CHANGELOG.md", "package.json"],
-      "message": "chore(release): [skip ci] Update v${nextRelease.version}\n\n${nextRelease.notes}"
-    },
-    {
-      "path": "semantic-release-vsce",
-      "packageVsix": true
-    }
-  ],
-  "publish": [
-    "semantic-release-vsce",
-    {
-      "path": "@semantic-release/github",
-      "assets": "*.vsix"
-    }
-  ],
   "plugins": [
     "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator"
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md",
+        "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file. See\n[Conventional Commits](https://conventionalcommits.org) for commit guidelines."
+      }
+    ],
+    [
+      "semantic-release-vsce",
+      {
+        "packageVsix": true
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "*.vsix"
+          }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md", "package.json"],
+        "message": "chore(release): [skip ci] Update v${nextRelease.version}\n\n${nextRelease.notes}"
+      }
+    ]
   ],
   "preset": "angular"
 }
