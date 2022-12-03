@@ -1,0 +1,84 @@
+{
+  "private": true,
+  "name": "vscode-idiomatic-css-comments-snippets",
+  "displayName": "Idiomatic CSS Comments",
+  "description": "VS Code snippets for Nicolas Gallagher's Idiomatic CSS comments principles.",
+  "version": "1.0.0",
+  "publisher": "demartini",
+  "author": {
+    "name": "Iolar Demartini Junior",
+    "email": "iolardemartini@gmail.com",
+    "url": "https://demartini.dev"
+  },
+  "bugs": {
+    "url": "https://github.com/demartini/vscode-idiomatic-css-comments-snippets/issues"
+  },
+  "contributors": [
+    {
+      "name": "VS Code Idiomatic CSS Comments Contributors",
+      "url": "https://github.com/demartini/vscode-idiomatic-css-comments-snippets/graphs/contributors"
+    }
+  ],
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "homepage": "https://github.com/demartini/vscode-idiomatic-css-comments-snippets#readme",
+  "keywords": [
+    "comments snippets",
+    "comments",
+    "css",
+    "html",
+    "less",
+    "postcss",
+    "scss",
+    "snippets"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/demartini/vscode-idiomatic-css-comments-snippets.git"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#292a44",
+    "theme": "dark"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "css",
+        "path": "./snippets/idiomatic-css-comments.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/idiomatic-css-comments.code-snippets"
+      },
+      {
+        "language": "less",
+        "path": "./snippets/idiomatic-scss-comments.code-snippets"
+      },
+      {
+        "language": "postcss",
+        "path": "./snippets/idiomatic-scss-comments.code-snippets"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/idiomatic-scss-comments.code-snippets"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish --yarn",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@demartini/semantic-release-config": "^0.1.4",
+    "@vscode/vsce": "^2.15.0",
+    "semantic-release": "^19.0.5",
+    "semantic-release-vsce": "^5.3.0"
+  }
+}

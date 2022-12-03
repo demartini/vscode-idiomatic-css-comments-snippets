@@ -1,0 +1,44 @@
+{
+  "CSS - Basic Comment": {
+    "prefix": ["com-css-basic"],
+    "body": [
+      "/* ${1:Basic Comment} */",
+      "",
+      "$2"
+    ],
+    "description": "CSS - Basic Comment"
+  },
+  "CSS - Section Comment": {
+    "prefix": ["com-css-section"],
+    "body": [
+      "/* ==========================================================================",
+      "  ${1:Section Comment Block}",
+      "  ========================================================================== */",
+      "",
+      "$2"
+    ],
+    "description": "CSS - Section Comment Block"
+  },
+  "CSS - Sub-Section Comment": {
+    "prefix": ["com-css-sub"],
+    "body": [
+      "/*",
+      "  ${1:Sub-Section Comment Block}",
+      "  ========================================================================== */",
+      "",
+      "$2"
+    ],
+    "description": "CSS - Sub-Section Comment Block"
+  },
+  "CSS - Long Comment": {
+    "prefix": ["com-css-long"],
+    "body": [
+      "/**",
+      " * ${1:Long Comment}",
+      " */",
+      "",
+      "$2"
+    ],
+    "description": "CSS - Long Comment"
+  }
+}
