@@ -1371,7 +1371,7 @@ fs-extra@^10.0.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
-fs-extra@^11.0.0:
+fs-extra@^11.0.0, fs-extra@^11.1.0:
   version "11.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.1.0.tgz#5784b102104433bb0e090f48bfc4a30742c357ed"
   integrity sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==
@@ -2671,17 +2671,17 @@ opener@^1.5.2:
   resolved "https://registry.yarnpkg.com/opener/-/opener-1.5.2.tgz#5d37e1f35077b9dcac4301372271afdeb2a13598"
   integrity sha512-ur5UIdyw5Y7yEj9wLzhqXiy6GZ3Mwx0yGI+5sMn2r0N0v3cKJvUmFH5yPP+WXh9e0xfyzyJX95D8l088DNFj7A==
 
-ovsx@^0.5.0:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/ovsx/-/ovsx-0.5.2.tgz#174c887746811adae131c9c31363a4756cb5cd9e"
-  integrity sha512-UbLultRCk46WddeA0Cly4hoRhzBJUiLgbIEViXlgOvV54LbsppClDkMLoCevUUBHoiNdMX2NuiSgURAEXgCZdw==
+ovsx@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/ovsx/-/ovsx-0.6.0.tgz#99f309eb28843decec77e01473112312b2202a0f"
+  integrity sha512-E9NvikCLJjv9Ssf04ozSTRi9VXZK0kLgiN59cgO7M/Zt9zyVVf//kNWseZai3OC7SjpvsNK5kzC9s+6iS7jCxA==
   dependencies:
     commander "^6.1.0"
     follow-redirects "^1.14.6"
     is-ci "^2.0.0"
     leven "^3.1.0"
     tmp "^0.2.1"
-    vsce "^2.6.3"
+    vsce "2.7.0"
 
 p-each-series@^2.1.0:
   version "2.2.0"
@@ -3186,17 +3186,17 @@ sax@>=0.6.0:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release-vsce@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/semantic-release-vsce/-/semantic-release-vsce-5.3.0.tgz#ef2355de3d337fc850e6ad4fbaea451bbd358f25"
-  integrity sha512-zTWL3KUhCHHKBU3vqMnCTUbP0B5a6LyGPytQnRIx9bhEvuvZWz7OczIQ73vI7D8wozOSWRWz3yAGPO8bWI1CjQ==
+semantic-release-vsce@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/semantic-release-vsce/-/semantic-release-vsce-5.4.0.tgz#6c73f9c2459d8081f7fdc2660002f5525a78272d"
+  integrity sha512-fPYmzBh4Vc9CjsU6gthjlBW5mmEJH4BZTsCav3k2868nT7JhOGCaU0k6Zf81XCaMq7BDLSSG9vAP1Zi2Tpdtlg==
   dependencies:
     "@semantic-release/error" "^3.0.0"
+    "@vscode/vsce" "^2.15.0"
     execa "^5.0.0"
-    fs-extra "^10.0.0"
+    fs-extra "^11.1.0"
     glob "^8.0.3"
-    ovsx "^0.5.0"
-    vsce "^2.6.3"
+    ovsx "^0.6.0"
 
 semantic-release@^19.0.5:
   version "19.0.5"
@@ -3728,10 +3728,10 @@ validate-npm-package-name@^4.0.0:
   dependencies:
     builtins "^5.0.0"
 
-vsce@^2.6.3:
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/vsce/-/vsce-2.15.0.tgz#4a992e78532092a34a755143c6b6c2cabcb7d729"
-  integrity sha512-P8E9LAZvBCQnoGoizw65JfGvyMqNGlHdlUXD1VAuxtvYAaHBKLBdKPnpy60XKVDAkQCfmMu53g+gq9FM+ydepw==
+vsce@2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/vsce/-/vsce-2.7.0.tgz#7be8deebd1e673b996238d608e7f7324c98744ed"
+  integrity sha512-CKU34wrQlbKDeJCRBkd1a8iwF9EvNxcYMg9hAUH6AxFGR6Wo2IKWwt3cJIcusHxx6XdjDHWlfAS/fJN30uvVnA==
   dependencies:
     azure-devops-node-api "^11.0.1"
     chalk "^2.4.2"
