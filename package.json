@@ -81,7 +81,7 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.7",
     "@semantic-release/release-notes-generator": "^10.0.3",
-    "@vscode/vsce": "^2.16.0",
+    "@vscode/vsce": "^2.18.0",
     "semantic-release": "^19.0.5",
     "semantic-release-vsce": "^5.5.2"
   }
